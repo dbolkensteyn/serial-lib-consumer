@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( SerialTest )
+find_package( serial REQUIRED )
+add_executable( SerialTest SerialTest.cpp )
+target_link_libraries( SerialTest ${serial_LIBS} )
